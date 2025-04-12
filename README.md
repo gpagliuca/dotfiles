@@ -1,2 +1,6 @@
+Done:
+* Tmux
+* Bash prompt
 
-TODO
+Todo:
+* VIM/NVIM

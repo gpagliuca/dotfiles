@@ -1,9 +1,13 @@
 
 # Tmux
-rm ~/.tmux.conf; cp tmux/tmux.conf ~/.tmux.conf
+rm ~/.tmux.conf; cp ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 # Bash prompt
-cp bash_prompt/bash_prompt ~/.bash_prompt
+cp ~/dotfiles/bash_prompt/bash_prompt ~/.bash_prompt
 LINE="source ~/.bash_prompt"
 grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >> ~/.bashrc
 source ~/.bashrc
+
+# Vim
+rm ~/.vimrc; cp ~/dotfiles/vim/vimrc ~/.vimrc
+

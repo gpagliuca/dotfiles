@@ -4,3 +4,4 @@ Done:
 
 Todo:
 * VIM/NVIM
+* ssh/config

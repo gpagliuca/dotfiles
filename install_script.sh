@@ -13,3 +13,8 @@ source ~/.bashrc
 # Vim
 rm ~/.vimrc; cp ~/dotfiles/vim/vimrc ~/.vimrc
 
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+source ~/.bashrc

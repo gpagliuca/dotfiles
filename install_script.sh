@@ -8,7 +8,6 @@ rm ~/.tmux.conf; cp ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 cp ~/dotfiles/bash_prompt/bash_prompt ~/.bash_prompt
 LINE="source ~/.bash_prompt"
 grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >> ~/.bashrc
-source ~/.bashrc
 
 # Vim
 rm ~/.vimrc; cp ~/dotfiles/vim/vimrc ~/.vimrc
@@ -16,5 +15,10 @@ rm ~/.vimrc; cp ~/dotfiles/vim/vimrc ~/.vimrc
 # fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# zoxide
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+LINE='eval "$(zoxide init bash)"'
+grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >> ~/.bashrc
 
 source ~/.bashrc

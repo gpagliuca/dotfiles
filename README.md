@@ -6,6 +6,8 @@ Installation procedure
 Done:
 * Tmux
 * Bash prompt
+* zoxide
+* fzf
 
 Todo:
 * VIM/NVIM

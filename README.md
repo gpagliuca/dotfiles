@@ -8,6 +8,7 @@ Done:
 * Bash prompt
 * zoxide
 * fzf
+* Added NVIM but default pat version is too old, have to fix that
 
 Todo:
 * VIM/NVIM
@@ -15,3 +16,4 @@ Todo:
 
 Tools requiring admin rights (excluded from this repo)
 * bat
+* starship (it might be installed on the user profile only)

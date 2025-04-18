@@ -21,4 +21,8 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 LINE='eval "$(zoxide init bash)"'
 grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >> ~/.bashrc
 
+# NVIM
+rm -r "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+
 source ~/.bashrc

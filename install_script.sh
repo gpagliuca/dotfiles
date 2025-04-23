@@ -20,12 +20,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 #----- zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-LINE='eval "$(zoxide init bash)"'
-grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >>~/.bashrc
-
-#----- NVIM - Kickstarter
-#rm -r "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
-#git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+LINE0='export PATH=$PATH:/home/$USER/.local/bin'
+grep -qF -- "$LINE0" ~/.bashrc || echo "$LINE0" >>~/.bashrc
+LINE1='eval "$(zoxide init bash)"'
+grep -qF -- "$LINE1" ~/.bashrc || echo "$LINE1" >>~/.bashrc
 
 #----- NVIM from scratch
 rm -rf ~/.config/nvim

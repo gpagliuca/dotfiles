@@ -1,3 +1,10 @@
+
+Pre-requisites
+* git
+* Tmux
+* curl
+* gcc
+
 Installation procedure
 1. clone repo in ~/dotfiles
 2. run `chmod +x ~/dotfiles/install_script.py`
@@ -8,10 +15,10 @@ Done:
 * Bash prompt
 * zoxide
 * fzf
-* Added NVIM but default pat version is too old, have to fix that
+* Added NVIM (tons of config still to create/adapt)
 
 Todo:
-* VIM/NVIM
+* VIM (ideally only a fallback plan)
 * ssh/config
 
 Tools requiring admin rights (excluded from this repo)

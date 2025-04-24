@@ -9,9 +9,9 @@ rm ~/.tmux.conf
 cp ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 #----- Bash prompt
-cp ~/dotfiles/bash_prompt/bash_prompt ~/.bash_prompt
-LINE="source ~/.bash_prompt"
-grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >>~/.bashrc
+# cp ~/dotfiles/bash_prompt/bash_prompt ~/.bash_prompt
+# LINE="source ~/.bash_prompt"
+# grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >>~/.bashrc
 
 #----- Vim
 rm ~/.vimrc
@@ -24,8 +24,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 
 #----- zoxide
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-LINE='eval "$(zoxide init bash)"'
-grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >>~/.bashrc
+LINE1='eval "$(zoxide init bash)"'
+grep -qF -- "$LINE1" ~/.bashrc || echo "$LINE1" >>~/.bashrc
 
 #----- NVIM from scratch
 rm -rf ~/.config/nvim
@@ -42,7 +42,7 @@ cp ~/dotfiles/bash_aliases/bash_aliases ~/.bash_aliases
 
 #----- Starship
 curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
-LINE='eval "$(zoxide init bash)"'
-grep -qF -- "$LINE" ~/.bashrc || echo "$LINE" >>~/.bashrc
+LINE2='eval "$(starship init bash)"'
+grep -qF -- "$LINE2" ~/.bashrc || echo "$LINE2" >>~/.bashrc
 
 source ~/.bashrc

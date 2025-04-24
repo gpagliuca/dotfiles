@@ -4,6 +4,7 @@ Pre-requisites
 * Tmux
 * curl
 * gcc
+* Nerd font (optional but highly recommended)
 
 Installation procedure
 1. clone repo in ~/dotfiles
@@ -24,3 +25,6 @@ Todo:
 Tools requiring admin rights (excluded from this repo)
 * bat
 * starship (it might be installed on the user profile only)
+
+Post Installation
+* type `prefix + I` in tmux to fetch tmux plugins

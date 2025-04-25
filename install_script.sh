@@ -22,11 +22,6 @@ rm -rf ~/.fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-#----- zoxide
-curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
-LINE1='eval "$(zoxide init bash)"'
-grep -qF -- "$LINE1" ~/.bashrc || echo "$LINE1" >>~/.bashrc
-
 #----- NVIM from scratch
 rm -rf ~/.config/nvim
 rm -rf ~/apps/nvim-linux-x86_64/
@@ -44,5 +39,10 @@ cp ~/dotfiles/bash_aliases/bash_aliases ~/.bash_aliases
 curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 LINE2='eval "$(starship init bash)"'
 grep -qF -- "$LINE2" ~/.bashrc || echo "$LINE2" >>~/.bashrc
+
+#----- zoxide
+curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+LINE1='eval "$(zoxide init bash)"'
+grep -qF -- "$LINE1" ~/.bashrc || echo "$LINE1" >>~/.bashrc
 
 source ~/.bashrc

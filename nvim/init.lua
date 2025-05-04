@@ -1,5 +1,5 @@
-require 'core.options' -- Load general options
-require 'core.keymaps' -- Load general keymaps
+require 'core.options'  -- Load general options
+require 'core.keymaps'  -- Load general keymaps
 require 'core.snippets' -- Custom code snippets
 
 -- Install package manager
@@ -52,6 +52,7 @@ require('lazy').setup({
   require 'plugins.nvim-repl',
   require 'plugins.neo-tree',
   require 'plugins.uv-nvim',
+  require 'plugins.floatterm',
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the

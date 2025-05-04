@@ -37,7 +37,8 @@ require('lazy').setup({
   require 'plugins.indent-blankline',
   require 'plugins.lazygit',
   require 'plugins.comment',
-  require 'plugins.debug',
+  require 'plugins.nvim-dap'
+  -- require 'plugins.debug',
   require 'plugins.gitsigns',
   require 'plugins.misc',
   require 'plugins.harpoon',

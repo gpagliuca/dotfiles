@@ -2,6 +2,7 @@
 alias vim="~/apps/nvim-linux-x86_64/bin/nvim"
 alias benfs="sshfs nlgpaf@ben:/home/nlgpaf ~/sshfs/ben"
 alias vwsfs="sshfs nlgpaf@vws:/glb/data/nl_ffre_base/nlgpaf ~/sshfs/vws"
+alias wh="source ~/apps/wh/.venv/bin/acrivate"
 
 
 
